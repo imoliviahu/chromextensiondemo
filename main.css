@@ -1,0 +1,43 @@
+body {
+  background: #aee7ff;
+  margin: 0;
+  padding: 0;
+}
+
+img.clouds {
+  z-index: -10;
+  position: fixed;
+}
+
+.parent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button {
+  position: relative;
+}
+
+.button > svg:hover > g path:nth-child(1) {
+  fill: #fce57e;
+}
+
+p {
+  width: fit-content;
+  padding: 18px;
+  flex-shrink: 0;
+  border-radius: 75px;
+  border: 3px solid #fff;
+  background: #aee7ff;
+}
