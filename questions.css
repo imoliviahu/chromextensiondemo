@@ -61,3 +61,19 @@ input[type="text"] {
 input[type="text"]::placeholder {
   color: white;
 }
+/* .submit{
+width: 156px;
+height: 82px;
+flex-shrink: 0;
+} */
+
+.button > svg:hover > g path:nth-child(1) {
+  fill: #fce57e;
+}
+
+.emotions-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5% 0% 2.5% 0%;
+}
+
