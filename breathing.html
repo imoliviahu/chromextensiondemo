@@ -29,27 +29,27 @@
         <ellipse cx="52.5" cy="50" rx="52.5" ry="50" fill="#FDFF9E" />
       </svg>
     </div>
-    <!-- hello -->
     <script>
       // JavaScript for the timer functionality
       function startTimer(duration) {
-        const circleEl = document.querySelector('.circle');
-        var timer = duration, minutes, seconds;
+        const circleEl = document.querySelector(".circle");
+        var timer = duration,
+          minutes,
+          seconds;
         var countdownTimer = setInterval(function () {
           minutes = parseInt(timer / 60, 10);
           seconds = parseInt(timer % 60, 10);
-  
-          document.getElementById('countdown').innerHTML = minutes + 'm ' + seconds + 's';
-          circleEl.classList.add('circle-anim');
+
+          document.getElementById("countdown").innerHTML =
+            minutes + "m " + seconds + "s";
+          circleEl.classList.add("circle-anim");
           if (--timer < 0) {
             clearInterval(countdownTimer);
-            document.getElementById('countdown').innerHTML = 'Timer expired!';
-            circleEl.classList.remove('circle-anim');
-
+            document.getElementById("countdown").innerHTML = "Timer expired!";
+            circleEl.classList.remove("circle-anim");
           }
         }, 1000);
       }
     </script>
-
   </body>
 </html>
