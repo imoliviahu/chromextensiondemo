@@ -2,6 +2,12 @@ body {
   background: #aee7ff;
   margin: 0;
   padding: 0;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
 }
 
 img.clouds {
@@ -19,12 +25,6 @@ img.clouds {
   align-items: center;
   height: 100vh;
   margin: 0;
-  color: #fff;
-  font-family: Helvetica;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
 }
 .button {
   position: relative;
@@ -51,12 +51,6 @@ div#caption {
   align-items: center;
   height: 100vh;
   margin: 0;
-  color: #fff;
-  font-family: Helvetica;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
 }
 @keyframes growAndShrink {
   0%,
@@ -69,6 +63,15 @@ div#caption {
 }
 .circle-anim {
   animation: growAndShrink 10s ease-in-out infinite;
+}
+
+#timer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  height: 20vh;
 }
 .breathbutton{
   border-radius: 12px;

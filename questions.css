@@ -1,5 +1,5 @@
-body{
-  background: #AEE7FF;
+body {
+  background: #aee7ff;
   margin: 0;
   padding: 0;
   font-family: Helvetica;
@@ -8,7 +8,7 @@ img.clouds {
   z-index: -10;
   position: fixed;
 }
-.parent{
+.parent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,7 @@ img.clouds {
   font-weight: 400;
   line-height: normal;
 }
-p{
+p {
   color: #fff;
   width: fit-content;
   padding: 18px;
@@ -33,6 +33,19 @@ p{
   margin: 10px 0; /* Add margin to separate paragraphs */
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+.happy {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.good {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+>>>>>>> d5da23c8626fa0a7b4608074e43ae8f42b952a1a
 .svgcontainer {
   margin-right: 10px; /* Adjust this value as needed for the spacing */
 }
@@ -45,6 +58,7 @@ input[type="text"] {
   height: 40px;
   color: white; /* Text color */
 }
+<<<<<<< HEAD
 input[type="text"]::placeholder {
   color: white;
 }
@@ -57,3 +71,8 @@ input[type="text"]::placeholder {
   padding: 2.5% 0% 2.5% 0%;
 }
 
+=======
+.svgcontainer {
+  margin-right: 10px; /* Adjust this value as needed for the spacing */
+}
+>>>>>>> d5da23c8626fa0a7b4608074e43ae8f42b952a1a
