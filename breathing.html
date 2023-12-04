@@ -9,7 +9,6 @@
   <body>
     <img class="clouds" src="images/Clouds.png" />
 
-<<<<<<< HEAD
     <div id="caption">Take a deep breath</div>
 
     <div class="timer">
@@ -17,9 +16,6 @@
       <div id="countdown"></div>
       <button onclick="startTimer(300)" class="breathbutton">Start</button>
     </div>
-=======
-    <div id="caption">Let's take a deep breath</div>
->>>>>>> d5da23c8626fa0a7b4608074e43ae8f42b952a1a
 
     <div class="parent">
       <svg
@@ -33,7 +29,7 @@
         <ellipse cx="52.5" cy="50" rx="52.5" ry="50" fill="#FDFF9E" />
       </svg>
     </div>
-<<<<<<< HEAD
+    <!-- hello -->
     <script>
       // JavaScript for the timer functionality
       function startTimer(duration) {
@@ -55,43 +51,5 @@
       }
     </script>
 
-=======
-
-    <div class="timer" id="timer"></div>
-
-    <script>
-      // Set the countdown time to 5 minutes (300 seconds)
-      var countdownTime = 300;
-      var timerDisplay = document.getElementById("timer");
-
-      function updateTimer() {
-        var minutes = Math.floor(countdownTime / 60);
-        var seconds = countdownTime % 60;
-
-        // Display the time in MM:SS format
-        timerDisplay.textContent =
-          (minutes < 10 ? "0" : "") +
-          minutes +
-          ":" +
-          (seconds < 10 ? "0" : "") +
-          seconds;
-      }
-
-      function countdown() {
-        updateTimer();
-
-        if (countdownTime > 0) {
-          countdownTime--;
-        } else {
-          countdownTime = 300; // Reset the countdown time to 5 minutes
-        }
-
-        setTimeout(countdown, 1000); // Update every second
-      }
-
-      // Start the countdown when the page loads
-      countdown();
-    </script>
->>>>>>> d5da23c8626fa0a7b4608074e43ae8f42b952a1a
   </body>
 </html>
