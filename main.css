@@ -26,18 +26,14 @@ img.clouds {
   font-weight: 200;
   line-height: normal;
 }
-
 .button {
   position: relative;
   z-index: 100;
   margin: 20px;
 }
-
 .button > svg:hover > g path:nth-child(1) {
   fill: #fce57e;
 }
-
-
 p {
   width: fit-content;
   margin: 10px;
@@ -47,7 +43,6 @@ p {
   border: 3px solid #fff;
   background: #aee7ff;
 }
-
 div#caption {
   position: relative;
   display: flex;
@@ -63,7 +58,6 @@ div#caption {
   font-weight: 200;
   line-height: normal;
 }
-
 @keyframes growAndShrink {
   0%,
   100% {
@@ -73,7 +67,9 @@ div#caption {
     transform: scale(5);
   }
 }
-
-.circle:hover {
+.circle-anim {
   animation: growAndShrink 10s ease-in-out infinite;
+}
+.breathbutton{
+  border-radius: 12px;
 }

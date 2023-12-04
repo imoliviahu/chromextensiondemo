@@ -33,16 +33,6 @@ p{
   margin: 10px 0; /* Add margin to separate paragraphs */
   text-align: center;
 }
-.happy{
-  width: 60px;
-height: 60px;
-flex-shrink: 0;
-}
-.good{
-  width: 60px;
-height: 60px;
-flex-shrink: 0;
-}
 .svgcontainer {
   margin-right: 10px; /* Adjust this value as needed for the spacing */
 }
@@ -54,23 +44,13 @@ input[type="text"] {
   width: 500px; /* Set the width */
   height: 40px;
   color: white; /* Text color */
-  
 }
-
-/* To change the placeholder color */
 input[type="text"]::placeholder {
   color: white;
 }
-/* .submit{
-width: 156px;
-height: 82px;
-flex-shrink: 0;
-} */
-
 .button > svg:hover > g path:nth-child(1) {
   fill: #fce57e;
 }
-
 .emotions-container {
   display: flex;
   justify-content: space-between;
