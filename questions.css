@@ -1,0 +1,56 @@
+body{
+  background: #AEE7FF;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+img.clouds {
+  z-index: -10;
+  position: fixed;
+}
+.parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+p{
+  color: #fff;
+  width: fit-content;
+  padding: 18px;
+  flex-shrink: 0;
+  border-radius: 75px;
+  border: 3px solid #fff;
+  background: #aee7ff;
+  margin: 10px 0; /* Add margin to separate paragraphs */
+  text-align: center;
+}
+.happy{
+  width: 60px;
+height: 60px;
+flex-shrink: 0;
+}
+.good{
+  width: 60px;
+height: 60px;
+flex-shrink: 0;
+}
+input[type="text"] {
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  width: 500px; /* Set the width */
+  height: 40px;
+}
+.svgcontainer {
+  margin-right: 10px; /* Adjust this value as needed for the spacing */
+}
