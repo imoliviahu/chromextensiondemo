@@ -43,6 +43,9 @@ flex-shrink: 0;
 height: 60px;
 flex-shrink: 0;
 }
+.svgcontainer {
+  margin-right: 10px; /* Adjust this value as needed for the spacing */
+}
 input[type="text"] {
   border: none;
   padding: 10px;
@@ -50,7 +53,11 @@ input[type="text"] {
   outline: none;
   width: 500px; /* Set the width */
   height: 40px;
+  color: white; /* Text color */
+  
 }
-.svgcontainer {
-  margin-right: 10px; /* Adjust this value as needed for the spacing */
+
+/* To change the placeholder color */
+input[type="text"]::placeholder {
+  color: white;
 }
