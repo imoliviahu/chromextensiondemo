@@ -12,9 +12,7 @@ body {
 
 img.clouds {
   z-index: -10;
-  position: fixed;
-  /* width: 100vw;
-  height: 100vh; */
+  position: absolute;
 }
 
 .parent {
@@ -72,6 +70,17 @@ div#caption {
   justify-content: top;
   align-items: center;
   height: 20vh;
+}
+
+.box {
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  flex-shrink: 0;
+  border-radius: 75px;
+  border: 3px solid #fff;
+  background: #aee7ff;
+  z-index: 100;
 }
 /* .breathbutton {
   border-radius: 12px;
