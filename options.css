@@ -54,3 +54,6 @@ p {
 a{
   text-decoration: none;
 }
+.button > svg:hover > g path:nth-child(1) {
+  fill: #fce57e;
+}

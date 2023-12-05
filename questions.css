@@ -53,10 +53,12 @@ input[type="text"] {
   outline: none;
   width: 500px; /* Set the width */
   height: 40px;
-  color: magenta; /* Text color */
+  color: PINK; /* Text color */
+  font-size: 20px;
 }
 input[type="text"]::placeholder {
-  color: magenta;
+  color: pink;
+  font-size: 20px;
 }
 .button > svg:hover > g path:nth-child(1) {
   fill: #fce57e;
