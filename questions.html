@@ -13,7 +13,7 @@
       <div class="Qone">
         <p>How do you feel right now?</p>
         <div class="emotions-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"  ">
+          <svg class="great" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
           <g clip-path="url(#clip0_28_1718)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M30 54.5455C43.556 54.5455 54.5455 43.556 54.5455 30C54.5455 16.4441 43.556 5.45459 30 5.45459C16.4441 5.45459 5.45459 16.4441 5.45459 30C5.45459 43.556 16.4441 54.5455 30 54.5455Z" fill="#D9D9D9"/>
             <mask id="mask0_28_1718" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
@@ -34,7 +34,7 @@
             </clipPath>
           </defs>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"  ">
+        <svg class="good" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"  ">
           <g clip-path="url(#clip0_28_1753)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M54.5455 30C54.5455 43.5561 43.5561 54.5455 30 54.5455C16.444 54.5455 5.45459 43.5561 5.45459 30C5.45459 16.444 16.444 5.45459 30 5.45459C43.5561 5.45459 54.5455 16.444 54.5455 30Z" fill="#D9D9D9"/>
             <mask id="mask0_28_1753" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
@@ -55,7 +55,7 @@
             </clipPath>
           </defs>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"  ">
+        <svg class="meh" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"  ">
           <g clip-path="url(#clip0_28_1788)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M30 54.5455C43.556 54.5455 54.5455 43.556 54.5455 30C54.5455 16.4455 43.556 5.45459 30 5.45459C16.4455 5.45459 5.45459 16.4455 5.45459 30C5.45459 43.556 16.4455 54.5455 30 54.5455Z" fill="#D9D9D9"/>
             <mask id="mask0_28_1788" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
@@ -76,7 +76,7 @@
             </clipPath>
           </defs>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"  ">
+        <svg class="bad" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"  ">
           <g clip-path="url(#clip0_28_1823)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M54.5455 30C54.5455 43.5561 43.5561 54.5455 30 54.5455C16.444 54.5455 5.45459 43.5561 5.45459 30C5.45459 16.444 16.444 5.45459 30 5.45459C43.5561 5.45459 54.5455 16.444 54.5455 30Z" fill="#D9D9D9"/>
             <mask id="mask0_28_1823" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
@@ -97,7 +97,7 @@
             </clipPath>
           </defs>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"  ">
+        <svg class="awful" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"  ">
           <g clip-path="url(#clip0_28_1866)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M54.5455 30C54.5455 43.556 43.556 54.5455 30 54.5455C16.4455 54.5455 5.45459 43.556 5.45459 30C5.45459 16.4455 16.4455 5.45459 30 5.45459C43.556 5.45459 54.5455 16.4455 54.5455 30Z" fill="#D9D9D9"/>
             <mask id="mask0_28_1866" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
@@ -124,11 +124,11 @@
       </div>
     <div class="Qtwo"> 
       <p>What are your intentions here today?</p>
-      <input type="text" placeholder="Type here..." class="custom-input"/>
+      <input type="text" placeholder="Type here..." id="intention-input" class="custom-input"/>
       </div>
       <div class="Qthree">
         <p>What do you hope to learn?</p>
-        <input type="text" placeholder="Type here..." class="custom-input"/>
+        <input type="text" placeholder="Type here..." id="hope-input" class="custom-input"/>
       </div>
     <div style="display: flex; justify-content: space-between;">
       <a class="button" href="index.html">
@@ -157,5 +157,7 @@
       </svg>
     </a>
     </div>
+    <button class="submitButton">Submit</button>
+    <script src="recap.js"></script>
   </body>
 </html>
