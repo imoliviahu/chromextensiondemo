@@ -35,11 +35,16 @@ var intentions = "";
 
 let submitButton = document.querySelector(".submitButton");
 
-let submissions = {
-  feeling: [],
-  intentions: [],
-  hopes: [],
-};
+// let submissions = {
+//   feeling: [],
+//   intentions: [],
+//   hopes: [],
+// };
+
+let feelingsALL = [];
+let intentionsALL = [];
+let hopesALL = [];
+let datesALL = [];
 
 submitButton.addEventListener("click", () => {
   // let submissions = {
@@ -48,15 +53,20 @@ submitButton.addEventListener("click", () => {
   //   hopes: [document.querySelector("#hope-input").value],
   // };
 
+  let newDate = new Date().toJSON().slice(0, 10).replace(/-/g, "/");
   let newFeeling = feeling;
   let newIntentions = document.querySelector("#intention-input").value;
   let newHopes = document.querySelector("#hope-input").value;
 
-  submissions.feeling.push(newFeeling);
-  submissions.intentions.push(newIntentions);
-  submissions.hopes.push(newHopes);
+  feelingsALL.push(newFeeling);
+  intentionsALL.push(newIntentions);
+  hopesALL.push(newHopes);
+  datesALL.push(newDate);
 
-  localStorage.setItem("submission", JSON.stringify(submissions));
+  localStorage.setItem("feelings", JSON.stringify(feelingsALL));
+  localStorage.setItem("intentions", JSON.stringify(intentionsALL));
+  localStorage.setItem("hopes", JSON.stringify(hopesALL));
+  localStorage.setItem("date", JSON.stringify(datesALL));
   console.log("worked");
   // save this to local storage somehow
 });

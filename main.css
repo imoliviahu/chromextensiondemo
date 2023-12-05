@@ -72,15 +72,35 @@ div#caption {
   height: 20vh;
 }
 
+.recap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .box {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  width: 800px;
+  width: 1200px;
   height: 800px;
-  flex-shrink: 0;
   border-radius: 75px;
   border: 3px solid #fff;
   background: #aee7ff;
   z-index: 100;
+}
+
+.responses {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
 }
 /* .breathbutton {
   border-radius: 12px;
