@@ -24,10 +24,26 @@ img.clouds {
   height: 100vh;
   margin: 0;
 }
+
+button.breathButton {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 200;
+  width: fit-content;
+  padding: 18px 20px 18px 20px;
+  flex-shrink: 0;
+  border-radius: 75px;
+  border: 1px solid #fff;
+  background: #aee7ff;
+  margin: 10px 0; /* Add margin to separate paragraphs */
+  text-align: center;
+  cursor: pointer;
+}
+
 .button {
-  position: relative;
-  z-index: 100;
-  margin: 20px;
+  position: absolute;
+  top: 8vh;
+  left: 90vw;
 }
 
 .button > svg:hover > g path:nth-child(1) {
@@ -80,22 +96,6 @@ div#caption {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-.box {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  width: 1200px;
-  height: 800px;
-  border-radius: 75px;
-  border: 3px solid #fff;
-  background: #aee7ff;
-  z-index: 100;
 }
 
 .responses {
