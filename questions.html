@@ -13,9 +13,9 @@
 
   <div class="parent">
     <div class="Qone">
-      <p>how do you feel right now?</p>
+      <p>How do you feel right now?</p>
       <div class="emotions-container">
-        <div>
+        <div class="emojiGroup">
           <svg class="great"xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
             <g clip-path="url(#clip0_28_1718)">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -54,7 +54,7 @@
           </svg>
           <p class="emoji-cap">Happy</p>
         </div>
-        <div>
+        <div class="emojiGroup">
           <svg class="good"xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none" ">
           <g clip-path=" url(#clip0_28_1753)">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -93,7 +93,7 @@
           </svg>
           <p class="emoji-cap">Good</p>
         </div>
-        <div>
+        <div class="emojiGroup">
         <svg class="meh"xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none" ">
           <g clip-path=" url(#clip0_28_1788)">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -132,7 +132,7 @@
         </svg>
         <p class="emoji-cap">Meh</p>
       </div>
-      <div>
+      <div class="emojiGroup">
         <svg class="bad"xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none" ">
           <g clip-path=" url(#clip0_28_1823)">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -171,7 +171,7 @@
         </svg>
         <p class="emoji-cap">Bad</p>
       </div>
-      <div>
+      <div class="emojiGroup">
         <svg class="awful"xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none" ">
           <g clip-path=" url(#clip0_28_1866)">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -224,6 +224,9 @@
       <p>What do you hope to learn?</p>
       <input type="text" placeholder="Type here..." id="hope-input" />
     </div>
+    <br>
+    <button class="submitButton">Submit</button>
+    <br><br>
     <div style="display: flex; justify-content: space-between;">
       <a class="button" href="index.html">
         <svg class="button" xmlns="http://www.w3.org/2000/svg" width="91" height="88" viewBox="0 0 91 88" fill="none"
@@ -231,7 +234,7 @@
           <g clip-path="url(#clip0_128_6905)">
             <path
               d="M89.5 44C89.5 67.4251 69.8483 86.5 45.5 86.5C21.1517 86.5 1.5 67.4251 1.5 44C1.5 20.5749 21.1517 1.5 45.5 1.5C69.8483 1.5 89.5 20.5749 89.5 44Z"
-              fill="#AEE7FF" stroke="white" stroke-width="3" />
+              fill="#AEE7FF" stroke="white" stroke-width="2" />
             <path d="M21 45L56 65.2073V24.7927L21 45ZM52.5 48.5H70V41.5H52.5V48.5Z" fill="white" />
           </g>
           <defs>
@@ -245,7 +248,7 @@
             <g clip-path="url(#clip0_125_6898)">
               <path
                 d="M89.5 44C89.5 67.4251 69.8483 86.5 45.5 86.5C21.1517 86.5 1.5 67.4251 1.5 44C1.5 20.5749 21.1517 1.5 45.5 1.5C69.8483 1.5 89.5 20.5749 89.5 44Z"
-                fill="#AEE7FF" stroke="white" stroke-width="3" />
+                fill="#AEE7FF" stroke="white" stroke-width="2" />
               <path d="M70 45L35 24.7927V65.2073L70 45ZM21 48.5H38.5V41.5H21V48.5Z" fill="white" />
             </g>
             <defs>
@@ -257,7 +260,6 @@
         </a>
 
     </div>
-    <button class="submitButton">Submit</button>
     <script src="recap.js"></script>
 </body>
 

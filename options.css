@@ -1,5 +1,5 @@
 body {
-  background: #AEE7FF;
+  background: #aee7ff;
   font-family: Helvetica;
   height: 100vh; /* Set height to viewport height */
   margin: 0;
@@ -10,8 +10,7 @@ body {
   color: #fff;
   font-family: Helvetica;
   font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
@@ -31,10 +30,14 @@ p {
   padding: 18px;
   flex-shrink: 0;
   border-radius: 75px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   background: #aee7ff;
   margin: 10px 0; /* Add margin to separate paragraphs */
   text-align: center;
+}
+
+p:hover {
+  background: #fce57e;
 }
 
 .center-container {
@@ -51,7 +54,7 @@ p {
 .meditate {
   margin: 0 10px;
 }
-a{
+a {
   text-decoration: none;
 }
 .button > svg:hover > g path:nth-child(1) {
