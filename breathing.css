@@ -15,6 +15,31 @@ img.clouds {
   position: absolute;
 }
 
+.arrow-container {
+  position: absolute;
+  top: 58vh;
+  left: 48vw;
+  width: 60px;
+  height: 60px;
+  animation: jump 2s infinite;
+}
+
+@keyframes jump {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
 .parent {
   position: relative;
   display: flex;
@@ -38,6 +63,10 @@ button.breathButton {
   margin: 10px 0; /* Add margin to separate paragraphs */
   text-align: center;
   cursor: pointer;
+}
+
+button.breathButton:hover {
+  background: #fce57e;
 }
 
 .button {
