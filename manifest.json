@@ -1,10 +1,13 @@
 {
   "name": "Let's Check In For the Day",
-  "description": "Base Level Extension",
+  "description": "A tool and reminder to help you mindfully use the internet",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
     "default_icon": "./images/favicon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
   }
 }
