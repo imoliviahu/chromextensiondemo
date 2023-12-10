@@ -40,6 +40,12 @@ p:hover {
   background: #fce57e;
 }
 
+div.button {
+  position: absolute;
+  left: 90vw;
+  top: 5vh;
+}
+
 .center-container {
   display: flex;
   flex-direction: column;

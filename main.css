@@ -15,6 +15,13 @@ img.clouds {
   position: absolute;
 }
 
+div.collectedDates,
+div.collectedFeelings,
+div.collectedIntentions,
+div.collectedHopes {
+  padding: 20px;
+  font-size: 28px;
+}
 .parent {
   position: relative;
   display: flex;
@@ -25,9 +32,10 @@ img.clouds {
   margin: 0;
 }
 .button {
-  position: relative;
+  position: absolute;
+  top: 5vh;
+  left: 90vw;
   z-index: 100;
-  margin: 20px;
 }
 
 .button > svg:hover > g path:nth-child(1) {
