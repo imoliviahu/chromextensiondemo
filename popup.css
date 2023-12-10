@@ -1,11 +1,40 @@
 body {
-    width: 400px;
-    padding: 20px;
-  }
-  
-h1 {
-    color: pink;
-  }
-  
- 
-  
+  background: #aee7ff;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  width: 200px;
+  height: 230px;
+}
+
+div {
+  padding: 30px 20px 30px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  width: fit-content;
+  margin: 10px;
+  padding: 18px;
+  flex-shrink: 0;
+  border-radius: 75px;
+  border: 2px solid #fff;
+  background: #aee7ff;
+}
+
+button:hover {
+  background: #fce57e;
+}
