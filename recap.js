@@ -1,11 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   var great = document.getElementsByClassName("great");
-
-//   great.addEventListener("click", function () {
-//     great.style.fill = "#fce57e";
-//   });
-// });
-
 const user = {
   feeling: "",
   intentions: "",
@@ -13,10 +5,12 @@ const user = {
 };
 
 var feeling = "";
+var clicked = "";
 
 let greatButton = document.querySelector(".great");
 greatButton.addEventListener("click", () => {
   feeling = "Great!";
+  greatButton.style.opacity = "0.5";
 });
 
 let goodButton = document.querySelector(".good");
