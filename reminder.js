@@ -4,27 +4,24 @@ function setReminder() {
 
   // Set a reminder function
   function remind() {
-    // Display the pop-up with the reminder text
-    reminderPopup.innerHTML =
-      "Take a break: rest your eyes, drink some water, get up and stretch, and eat food if you are hungry.";
-    reminderPopup.style.display = "block";
-    console.log("Take a break");
-
-    // Hide the pop-up after a short delay (e.g., 5 seconds)
-    setTimeout(function () {
-      reminderPopup.style.display = "none";
-    }, 5000); // 5000 milliseconds = 5 seconds
+    // Display the reminder in the HTML element
+    reminderDisplay.innerHTML =
+      "Time to take a break: Drink some water, rest your eyes, stretch, and get some food if your hungry!";
+    // You can replace this line with your own reminder logic
   }
 
-  // Set a reminder every 4 hours (4 hours * 60 minutes * 60 seconds * 1000 milliseconds)
-  //   const interval = 4 * 60 * 60 * 1000;
-  const interval = 20 * 1000;
+  // Set a reminder every 20 seconds
+  const interval = 10 * 1000;
 
   // Set the initial reminder
   setTimeout(function repeatReminder() {
     remind();
     // Set the next reminder
-    setTimeout(repeatReminder, interval);
+    setTimeout(function () {
+      // Clear the reminder text after a short delay (e.g., 2 seconds)
+      reminderDisplay.innerHTML = "";
+      repeatReminder();
+    }, 2000); // 2000 milliseconds = 2 seconds
   }, interval);
 }
 
