@@ -16,21 +16,25 @@ greatButton.addEventListener("click", () => {
 let goodButton = document.querySelector(".good");
 goodButton.addEventListener("click", () => {
   feeling = "Good";
+  goodButton.style.opacity = "0.5";
 });
 
 let mehButton = document.querySelector(".meh");
 mehButton.addEventListener("click", () => {
   feeling = "Meh";
+  mehButton.style.opacity = "0.5";
 });
 
 let badButton = document.querySelector(".bad");
 badButton.addEventListener("click", () => {
   feeling = "Bad";
+  badButton.style.opacity = "0.5";
 });
 
 let awfulButton = document.querySelector(".awful");
 awfulButton.addEventListener("click", () => {
   feeling = "Awful";
+  awfulButton.style.opacity = "0.5";
 });
 
 var intentions = "";

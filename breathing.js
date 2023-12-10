@@ -22,11 +22,11 @@ function startTimer(duration) {
 }
 
 // Event listener for the button
-document.addEventListener('DOMContentLoaded', function() {
-  const startButton = document.querySelector('.breathButton');
-  
+document.addEventListener("DOMContentLoaded", function () {
+  const startButton = document.querySelector(".breathButton");
+
   if (startButton) {
-    startButton.addEventListener('click', function() {
+    startButton.addEventListener("click", function () {
       startTimer(300); // Call your timer function here with the desired time
     });
   }
