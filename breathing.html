@@ -8,8 +8,9 @@
     <title>Let's Check In For the Day</title>
   </head>
   <body>
-    <img class="clouds" src="images/Clouds.png" />
-
+    <div class="moving-image-container">
+      <img src="images/longcloud.png" alt="Moving Clouds">
+    </div>
     <div id="caption">Take a deep breath</div>
     <div class="arrow-container">
       <svg
@@ -41,7 +42,7 @@
       style="position: fixed; bottom: 20px; left: 20px; z-index: 9"
     >
       <div id="countdown"></div>
-      <button  class="breathButton">Start</button>
+      <button class="breathButton">Start</button>
     </div>
 
     <a class="next" href="options.html">
@@ -84,6 +85,9 @@
       >
         <ellipse cx="52.5" cy="50" rx="52.5" ry="50" fill="#FDFF9E" />
       </svg>
+      <div class="moving-image-container">
+        <img src="images/longcloud.png" alt="Moving Clouds">
+      </div>
     </div>
     <script src="breathing.js"></script>
   </body>

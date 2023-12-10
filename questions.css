@@ -4,9 +4,31 @@ body {
   padding: 0;
   font-family: Helvetica;
 }
-img.clouds {
-  z-index: -10;
-  position: fixed;
+/* img.longcloud {
+  z-index: -20;
+} */
+.moving-image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -20;
+}
+
+.moving-image-container img {
+  width: 14383px; /* Width larger than the screen to extend beyond */
+  height: 982px;
+  position: absolute;
+  animation: moveImage 300s linear infinite; /* Adjust duration (60s) as needed */
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateX(0); /* Start from the left edge of the screen */
+  }
+  100% {
+    transform: translateX(-14383px); /* Move exactly the width of the image to the left */
+  }
 }
 .parent {
   display: flex;
