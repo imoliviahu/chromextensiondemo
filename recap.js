@@ -1,3 +1,11 @@
+// document.addEventListener("DOMContentLoaded", function () {
+//   var great = document.getElementsByClassName("great");
+
+//   great.addEventListener("click", function () {
+//     great.style.fill = "#fce57e";
+//   });
+// });
+
 const user = {
   feeling: "",
   intentions: "",
@@ -35,24 +43,12 @@ var intentions = "";
 
 let submitButton = document.querySelector(".submitButton");
 
-// let submissions = {
-//   feeling: [],
-//   intentions: [],
-//   hopes: [],
-// };
-
 let feelingsALL = [];
 let intentionsALL = [];
 let hopesALL = [];
 let datesALL = [];
 
 submitButton.addEventListener("click", () => {
-  // let submissions = {
-  //   feeling: [feeling],
-  //   intentions: [document.querySelector("#intention-input").value],
-  //   hopes: [document.querySelector("#hope-input").value],
-  // };
-
   let newDate = new Date().toJSON().slice(0, 10).replace(/-/g, "/");
   let newFeeling = feeling;
   let newIntentions = document.querySelector("#intention-input").value;

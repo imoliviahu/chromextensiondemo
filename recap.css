@@ -32,8 +32,9 @@ div.collectedHopes {
   margin: 0;
 }
 .button {
-  position: relative;
-  margin: 50px 20px 20px 20px;
+  position: absolute;
+  top: 5vh;
+  left: 90vw;
   z-index: 100;
 }
 
