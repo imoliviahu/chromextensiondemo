@@ -1,5 +1,11 @@
 console.log("This is a popup!");
 
+const activateBtn = document.getElementById('activate');
+​
+activateBtn.addEventListener('click', () => {
+  window.open('questions.html');
+})
+
 function setReminder() {
   // Get the HTML element to display the reminder
   const reminderDisplay = document.getElementById("reminderDisplay");
