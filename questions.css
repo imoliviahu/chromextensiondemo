@@ -27,7 +27,9 @@ body {
     transform: translateX(0); /* Start from the left edge of the screen */
   }
   100% {
-    transform: translateX(-14383px); /* Move exactly the width of the image to the left */
+    transform: translateX(
+      -14383px
+    ); /* Move exactly the width of the image to the left */
   }
 }
 .parent {
@@ -75,6 +77,7 @@ input[type="text"] {
   width: 500px; /* Set the width */
   height: 40px;
   color: #24befe; /* Text color */
+  font-size: 20px;
 }
 input[type="text"]::placeholder {
   color: #24befe;
